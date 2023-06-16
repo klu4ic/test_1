@@ -20,7 +20,7 @@ pipeline {
 }
 
 void runPerson () {
-  if (PERSON == 'Jenkins') {
+  if ( "${params.PERSON}" == 'Jenkins') {
             // publish to the /nr-smbd-snapshots
     echo "It's: Jenkins"
   } else {
