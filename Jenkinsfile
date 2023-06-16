@@ -8,7 +8,7 @@ pipeline {
     stage('first') {
       steps{
         script {
-          echo $PERSON
+          echo PERSON
         }
       }
     }
