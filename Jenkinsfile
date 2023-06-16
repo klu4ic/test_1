@@ -8,7 +8,7 @@ pipeline {
     stage('first') {
       steps{
 
-        sh  'echo {params.PERSON}'
+        sh  'echo ${params.PERSON}'
 
       }
     }
