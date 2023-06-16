@@ -7,18 +7,21 @@ pipeline {
   stages{
     stage('first') {
       steps{
-
-        if (PERSON == 'Jenkins') {
-            // publish to the /nr-smbd-snapshots
-            echo "It's: Jenkins"
-        } else {
-            echo "It's not a Jenkins"
-        }
+      
+        script {runPerson ()}
         //script { echo "${params.PERSON}" }
         
 
 
       }
     }
+  }
+  void runPerson () {
+      if (PERSON == 'Jenkins') {
+            // publish to the /nr-smbd-snapshots
+            echo "It's: Jenkins"
+        } else {
+            echo "It's not a Jenkins"
+        }
   }
 }
