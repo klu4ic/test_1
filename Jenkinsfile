@@ -16,12 +16,12 @@ pipeline {
       }
     }
   }
-  void runPerson () {
-      if (PERSON == 'Jenkins') {
+void runPerson () {
+  if (PERSON == 'Jenkins') {
             // publish to the /nr-smbd-snapshots
-            echo "It's: Jenkins"
-        } else {
-            echo "It's not a Jenkins"
-        }
+    echo "It's: Jenkins"
+  } else {
+      echo "It's not a Jenkins"
   }
+}
 }
