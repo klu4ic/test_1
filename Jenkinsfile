@@ -3,8 +3,10 @@ pipeline {
   agent any
   stages{
     stage('first') {
-      script {
-        echo "OK"
+      steps{
+        script {
+          echo "OK"
+        }
       }
     }
   }
