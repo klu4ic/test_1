@@ -16,6 +16,9 @@ pipeline {
       }
     }
   }
+
+}
+
 void runPerson () {
   if (PERSON == 'Jenkins') {
             // publish to the /nr-smbd-snapshots
@@ -23,5 +26,4 @@ void runPerson () {
   } else {
       echo "It's not a Jenkins"
   }
-}
 }
