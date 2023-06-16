@@ -7,7 +7,7 @@ pipeline {
   stages{
     stage('first') {
       steps{
-        script { params.each { PERSON, v -> env[PERSON] = "${v}" } }
+        script { echo "${params.PERSON}" }
 
 
       }
