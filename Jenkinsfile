@@ -7,7 +7,7 @@ pipeline {
   stages{
     stage('first') {
       steps{
-        script { echo ${params.PERSON} }
+        script { echo "${params.PERSON}" }
 
 
       }
